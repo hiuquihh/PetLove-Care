@@ -12,3 +12,13 @@
     font-family: "bold";
     src: url(../fonts/Poppins-Bold.ttf);
 }
+
+@font-face {
+    font-family: "Pacifico";
+    src: url(../fonts/Pacifico-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Meow Script";
+    src: url(../fonts/MeowScript-Regular.ttf);
+}

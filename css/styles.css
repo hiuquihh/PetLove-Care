@@ -1,101 +1,190 @@
-html{
+html {
     font-size: 16px;
-}
-body {
-    margin:0
-}
-header{
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  img {
+    width: 100%;
+  }
+  
+  header {
     background-color: var(--header-color);
     padding: 30px 0;
     /* espaçamento interno: padding */
-}
-header h1 {
-    text-align: center; /*centralizar o texto*/
-    font-family: "logo"; /*fonte do texto */
+    position: relative; /* Define o contexto de posicionamento */
+    height: 200px;
+    display: grid;
+    grid-template-columns: 1 1;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  header hgroup {
+    /*
+    Define camadas para trazer elementos
+    "para frente" ou "para trás" na
+    visualização da página
+    */
+    z-index: 2;
+    font-size: 2.5 em;
+  }
+  
+  header h1, header h2 {
+    text-align: center;
+    /*centralizar o texto*/
+    font-family: "Pacifico";
+    /*fonte do texto */
     color: white;
-    font-size: 3em; /*Tamanho da fonte*/
-    text-shadow: 3px 3px 5px black; /*Se colocar negativo, vai para a esquerda ou para cima */
+    font-size: 3em;
+    /*Tamanho da fonte*/
+    text-shadow: 3px 3px 5px black;
+    /*Se colocar negativo, vai para a esquerda ou para cima */
     /* text-shadow pode receber 3 valores ou 4, sendo eles: deslocamento-horizontal, deslocamento-vertical, desfoco, cor-sombra; */
-
-}
-#main{ 
-display: flex;
-/* flex-direction: row; */
-
-
-}
-
-#menu{
+  }
+  
+  header h1{
+    margin-bottom: 10px; 
+  }
+  
+  header h2 {
+    font-family: "Meow Script";
+    text-align: center;
+    font-size: 2.0em;
+    margin-top: 0;
+  }
+  .coluna {
+    display: flex; /* Ativa o layout em colunas */
+    align-items: center; /* Centraliza os itens verticalmente */
+    justify-content: center; /* Opcional: ajusta horizontalmente */
+    margin-bottom: 20px; /* Espaçamento entre as colunas */
+    gap: 20px; /* Espaço entre os elementos internos */
+  }
+  
+  /* Estilizando a imagem */
+  .img-pet img {
+    width: 400px; /* Define uma largura fixa ou ajustável */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 9px; /* Bordas arredondadas (opcional) */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+  }
+  
+  /* Texto ao lado da imagem */
+  .texto {
+    max-width: 600px; /* Limita a largura do texto */
+    font-family: Arial, sans-serif; /* Fonte padrão */
+    line-height: 1.6; /* Espaçamento entre as linhas */
+    text-align: justify; /* Alinha o texto de forma justificada */
+    padding: auto auto 30px 30px;
+  }
+  
+  #title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    
+  }
+  
+  #main {
+    display: flex;
+    /* flex-direction: row; */
+  }
+  
+  #menu {
     width: 15%;
     background-color: var(--menu-color);
-    color:white;
+    color: white;
     padding: 20px 10px;
-}
-
-#menu span {
+  }
+  
+  #menu span {
     font-family: "bold";
     font-size: 1.5em;
-
-}
-
-ul{
-    list-style: none; /* estilo de lista */
+  
+  }
+  
+  ul {
+    list-style: none;
+    /* estilo de lista */
     padding-left: 0;
-}
-
-#menu li {
+  }
+  
+  #menu li {
     font-family: "regular";
     margin-bottom: 10px;
-    cursor: pointer; /* para quando o usuario passar o mouse em cima, o cursor mudar */
+    cursor: pointer;
+    /* para quando o usuario passar o mouse em cima, o cursor mudar */
     font-size: 1em;
-}
-
-#menu li:hover /*para quando passar o mouse em cima, mudar algo*/ {
-color: #555; 
-}
-
-#content {
+  }
+  
+  #menu li:hover
+  
+  /*para quando passar o mouse em cima, mudar algo*/
+    {
+    color: #555;
+  }
+  
+  #content {
     width: 80%;
     padding: 30px 20px;
     background-color: var(--content-color);
-}
-
-#content-tittle {
-font-family: "bold";
-text-align: center;
-font-size: 2em;
-}
-
-.movie-card{
+  }
+  
+  #content-title {
+    font-family: "bold";
+    text-align: center;
+    font-size: 2em;
+  }
+  
+  .movie-card {
     background-color: var(--movie-card-color);
     border-radius: 50px;
     width: 70%;
     margin: 50px auto;
     display: flex;
     padding: 40px;
-}
-
-.movie-card img{
+  }
+  
+  .movie-card img {
     width: 50%;
-
-}
-
-.movie-card span{
+  
+  }
+  
+  .movie-card span {
     width: 50%;
     padding: 0 20px;
     font-family: "regular";
     font-size: 1em;
-}
-
-footer {
+  }
+  
+  footer {
     background-color: var(--footer-color);
     padding: 50px 20px;
     text-align: center;
-}
-
-footer span {
+  }
+  
+  footer span {
     color: white;
     font-family: "bold";
-    font-size: 1.em;
-
-}
+    font-size: 1.5em;
+  }
+  
+  .img-logo {
+    /* Faz o elemento HTML flutuar para o lado indicado */
+    float: right;
+    position: absolute; /* Posiciona em relação ao header */
+    padding-top: 40px; /* Fixa no canto inferior */
+    right: 130px; /* Fixa no canto direito */
+    max-width: 100px; /* Largura máxima da logo */
+    height: auto; /* Mantém a proporção da imagem */
+    top: 25%;
+    z-index: 1;
+  }
+  
+  .img-logo img {
+    width: 225px;
+    height: 225px;
+    border-radius: 50%;
+  }

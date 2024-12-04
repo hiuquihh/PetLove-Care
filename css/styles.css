@@ -1,190 +1,305 @@
 html {
-    font-size: 16px;
-  }
-  
-  body {
-    margin: 0;
-  }
-  
-  img {
-    width: 100%;
-  }
-  
-  header {
-    background-color: var(--header-color);
-    padding: 30px 0;
-    /* espaçamento interno: padding */
-    position: relative; /* Define o contexto de posicionamento */
-    height: 200px;
-    display: grid;
-    grid-template-columns: 1 1;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  header hgroup {
-    /*
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+abbr  {
+  text-decoration: none;
+}
+
+header {
+  background-color: var(--header-color);
+  padding: 30px 0 0;
+  /* espaçamento interno: padding */
+  position: relative;
+  /* Define o contexto de posicionamento */
+  min-height: 200px;
+  display: grid;
+  grid-template-columns: 1 1;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header hgroup {
+  /*
     Define camadas para trazer elementos
     "para frente" ou "para trás" na
     visualização da página
     */
-    z-index: 2;
-    font-size: 2.5 em;
-  }
+  z-index: 2;
+}
+
+header h1,
+header h2 {
+  text-align: center;
+  /*centralizar o texto*/
+  font-family: "Pacifico";
+  /*fonte do texto */
+  color: white;
+  font-size: 3em;
+  /*Tamanho da fonte*/
+  text-shadow: 3px 3px 5px black;
+  /*Se colocar negativo, vai para a esquerda ou para cima */
+  /* text-shadow pode receber 3 valores ou 4, sendo eles: deslocamento-horizontal, deslocamento-vertical, desfoco, cor-sombra; */
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+header h2 {
+  font-family: "Meow Script";
+  text-align: center;
+  font-size: 2.0em;
+  margin-top: 0;
+}
+
+.coluna {
+  display: flex;
+  /* Ativa o layout em colunas */
+  align-items: center;
+  /* Centraliza os itens verticalmente */
+  justify-content: center;
+  /* Opcional: ajusta horizontalmente */
+  margin-bottom: 50px !important;
+  /* Espaçamento entre as colunas */
+  gap: 20px;
+  /* Espaço entre os elementos internos */
+}
+
+/* Estilizando a imagem */
+.img-pet img {
+  width: 400px;
+  /* Define uma largura fixa ou ajustável */
+  height: auto;
+  /* Mantém a proporção da imagem */
+  border-radius: 9px;
+  /* Bordas arredondadas (opcional) */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  /* Sombra para destaque */
+}
+
+/* Texto ao lado da imagem */
+.texto {
+  max-width: 600px;
+  /* Limita a largura do texto */
+  font-family: 'Outfit';
+  /* Fonte padrão */
+  line-height: 1.6;
+  /* Espaçamento entre as linhas */
+  text-align: justify;
+  /* Alinha o texto de forma justificada */
+  padding: auto auto 30px 30px;
+  display: block;
+}
+
+.p{
+  text-indent: 20px; /* Define o recuo na primeira linha */
+}
+
+
+#title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  display: block;
+}
+
+#main {
+  display: flex;
+  margin-right: 0;
+  /* flex-direction: row; */
+}
+
+nav {
+  background-color: var(--menu-color);
   
-  header h1, header h2 {
-    text-align: center;
-    /*centralizar o texto*/
-    font-family: "Pacifico";
-    /*fonte do texto */
-    color: white;
-    font-size: 3em;
-    /*Tamanho da fonte*/
-    text-shadow: 3px 3px 5px black;
-    /*Se colocar negativo, vai para a esquerda ou para cima */
-    /* text-shadow pode receber 3 valores ou 4, sendo eles: deslocamento-horizontal, deslocamento-vertical, desfoco, cor-sombra; */
-  }
+  font-family: 'Outfit';
+  font-weight: bold;
+  color: white;
+  padding-left: 30px;
+}
+
+nav ul {
+  display: flex;
+  padding: 0 28%;
+}
+
+nav ul li {
+  margin-right: 40px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+nav ul li a:hover {
+  color: #ff6a6a;
+}
+ul {
+  list-style: none;
+  /* estilo de lista */
+  padding-left: 0;
+}
+
+#content {
+  width: 100%;
+  padding: 30px 20px;
+  background-color: var(--content-color);
+}
+
+#content-title {
+  font-family: "bold";
+  text-align: center;
+  font-size: 2em;
+}
+
+
+footer span {
+  color: white;
+  font-family: "bold";
+  font-size: 1.5em;
+}
+
+.img-pet img {
+  width: 225px;
+  height: 225px;
+}
+.img-funcionamento {
+  width: 192px;
+  /* border: 1px solid red; */
+}
+
+#logo img {
+  border-radius: 50%;
+}
+
+#quem-somos {
+  margin: 0 60px;
+}
+
+#quem-somos,
+#quem-somos .img-pet {
+  display: flex;
+}
+
+#quem-somos,
+#quem-somos .texto {
+  text-align: center;
+}
+
+#quem-somos img {
+  width: 100%;
+  object-fit: cover;
+}
+
+#depoimentos {
+  flex-direction: column;
+}
+
+#depoimentos img {
+  border-radius: 50%;
+  width: 48px;
+}
+
+#depoimentos .texto {
+  text-align: right;
+}
+
+#depoimentos .texto span {
+  line-height: 1.5;
+}
+
+#depoimentos figure {
+  margin: 0;
+  margin-left: 30px;
   
-  header h1{
-    margin-bottom: 10px; 
-  }
-  
-  header h2 {
-    font-family: "Meow Script";
-    text-align: center;
-    font-size: 2.0em;
-    margin-top: 0;
-  }
-  .coluna {
-    display: flex; /* Ativa o layout em colunas */
-    align-items: center; /* Centraliza os itens verticalmente */
-    justify-content: center; /* Opcional: ajusta horizontalmente */
-    margin-bottom: 20px; /* Espaçamento entre as colunas */
-    gap: 20px; /* Espaço entre os elementos internos */
-  }
-  
-  /* Estilizando a imagem */
-  .img-pet img {
-    width: 400px; /* Define uma largura fixa ou ajustável */
-    height: auto; /* Mantém a proporção da imagem */
-    border-radius: 9px; /* Bordas arredondadas (opcional) */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
-  }
-  
-  /* Texto ao lado da imagem */
-  .texto {
-    max-width: 600px; /* Limita a largura do texto */
-    font-family: Arial, sans-serif; /* Fonte padrão */
-    line-height: 1.6; /* Espaçamento entre as linhas */
-    text-align: justify; /* Alinha o texto de forma justificada */
-    padding: auto auto 30px 30px;
-  }
-  
-  #title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-    text-align: center;
-    
-  }
-  
-  #main {
-    display: flex;
-    /* flex-direction: row; */
-  }
-  
-  #menu {
-    width: 15%;
-    background-color: var(--menu-color);
-    color: white;
-    padding: 20px 10px;
-  }
-  
-  #menu span {
-    font-family: "bold";
-    font-size: 1.5em;
-  
-  }
-  
-  ul {
-    list-style: none;
-    /* estilo de lista */
-    padding-left: 0;
-  }
-  
-  #menu li {
-    font-family: "regular";
-    margin-bottom: 10px;
-    cursor: pointer;
-    /* para quando o usuario passar o mouse em cima, o cursor mudar */
-    font-size: 1em;
-  }
-  
-  #menu li:hover
-  
-  /*para quando passar o mouse em cima, mudar algo*/
-    {
-    color: #555;
-  }
-  
-  #content {
-    width: 80%;
-    padding: 30px 20px;
-    background-color: var(--content-color);
-  }
-  
-  #content-title {
-    font-family: "bold";
-    text-align: center;
-    font-size: 2em;
-  }
-  
-  .movie-card {
-    background-color: var(--movie-card-color);
-    border-radius: 50px;
-    width: 70%;
-    margin: 50px auto;
-    display: flex;
-    padding: 40px;
-  }
-  
-  .movie-card img {
-    width: 50%;
-  
-  }
-  
-  .movie-card span {
-    width: 50%;
-    padding: 0 20px;
-    font-family: "regular";
-    font-size: 1em;
-  }
-  
-  footer {
-    background-color: var(--footer-color);
-    padding: 50px 20px;
-    text-align: center;
-  }
-  
-  footer span {
-    color: white;
-    font-family: "bold";
-    font-size: 1.5em;
-  }
-  
-  .img-logo {
-    /* Faz o elemento HTML flutuar para o lado indicado */
-    float: right;
-    position: absolute; /* Posiciona em relação ao header */
-    padding-top: 40px; /* Fixa no canto inferior */
-    right: 130px; /* Fixa no canto direito */
-    max-width: 100px; /* Largura máxima da logo */
-    height: auto; /* Mantém a proporção da imagem */
-    top: 25%;
-    z-index: 1;
-  }
-  
-  .img-logo img {
-    width: 225px;
-    height: 225px;
-    border-radius: 50%;
-  }
+  font-family: 'Outfit';
+  text-align: center;
+  flex: 1;
+}
+
+#depoimentos figcaption {
+  margin-top: 0;
+}
+
+.depoimento {
+  display: flex;
+  align-items: center;
+}
+
+.texto .p {
+  font-size: 16px;
+  color: #555;
+}
+
+.planos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin: 50px auto;
+  padding: 20px;
+  max-width: 1200px;
+}
+
+.planos > div {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  width: 300px;
+  padding: 20px;
+  position: relative;
+  text-align: left;
+  font-family: 'Outfit', sans-serif;
+}
+
+.planos .title-plans {
+  font-family: 'Pacifico', cursive;
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.planos ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.planos ul li {
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Cores específicas para os planos */
+.planos > div:nth-child(1) {
+  background-color: #e6eaff;
+  border-left: 5px solid #6a98ff;
+}
+
+.planos > div:nth-child(2) {
+  background-color: #ffe6e6;
+  border-left: 5px solid #ff6a6a;
+}
+
+.planos > div:nth-child(3) {
+  background-color: #e6faff;
+  border-left: 5px solid #6affd0;
+}
+
+footer {
+  background-color: var(--footer-color);
+  padding: 50px 20px;
+  text-align: center;
+}

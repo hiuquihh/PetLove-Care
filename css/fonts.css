@@ -22,3 +22,18 @@
     font-family: "Meow Script";
     src: url(../fonts/MeowScript-Regular.ttf);
 }
+
+@font-face {
+    font-family: "Outfit";
+    src: url(../fonts/Outfit-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Lexend Deca";
+    src: url(../fonts/LexendDeca-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Gabarito";
+    src: url(../fonts/Gabarito-Regular.ttf);
+}

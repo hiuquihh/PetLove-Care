@@ -1,0 +1,101 @@
+html{
+    font-size: 16px;
+}
+body {
+    margin:0
+}
+header{
+    background-color: var(--header-color);
+    padding: 30px 0;
+    /* espaçamento interno: padding */
+}
+header h1 {
+    text-align: center; /*centralizar o texto*/
+    font-family: "logo"; /*fonte do texto */
+    color: white;
+    font-size: 3em; /*Tamanho da fonte*/
+    text-shadow: 3px 3px 5px black; /*Se colocar negativo, vai para a esquerda ou para cima */
+    /* text-shadow pode receber 3 valores ou 4, sendo eles: deslocamento-horizontal, deslocamento-vertical, desfoco, cor-sombra; */
+
+}
+#main{ 
+display: flex;
+/* flex-direction: row; */
+
+
+}
+
+#menu{
+    width: 15%;
+    background-color: var(--menu-color);
+    color:white;
+    padding: 20px 10px;
+}
+
+#menu span {
+    font-family: "bold";
+    font-size: 1.5em;
+
+}
+
+ul{
+    list-style: none; /* estilo de lista */
+    padding-left: 0;
+}
+
+#menu li {
+    font-family: "regular";
+    margin-bottom: 10px;
+    cursor: pointer; /* para quando o usuario passar o mouse em cima, o cursor mudar */
+    font-size: 1em;
+}
+
+#menu li:hover /*para quando passar o mouse em cima, mudar algo*/ {
+color: #555; 
+}
+
+#content {
+    width: 80%;
+    padding: 30px 20px;
+    background-color: var(--content-color);
+}
+
+#content-tittle {
+font-family: "bold";
+text-align: center;
+font-size: 2em;
+}
+
+.movie-card{
+    background-color: var(--movie-card-color);
+    border-radius: 50px;
+    width: 70%;
+    margin: 50px auto;
+    display: flex;
+    padding: 40px;
+}
+
+.movie-card img{
+    width: 50%;
+
+}
+
+.movie-card span{
+    width: 50%;
+    padding: 0 20px;
+    font-family: "regular";
+    font-size: 1em;
+}
+
+footer {
+    background-color: var(--footer-color);
+    padding: 50px 20px;
+    text-align: center;
+}
+
+footer span {
+    color: white;
+    font-family: "bold";
+    font-size: 1.em;
+
+}

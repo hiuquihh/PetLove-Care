@@ -98,7 +98,19 @@ header h2 {
   padding: auto auto 30px 30px;
   display: block;
 }
-
+.text-plans {
+  max-width: 800px;
+  /* Limita a largura do texto */
+  font-family: 'Outfit';
+  /* Fonte padrão */
+  line-height: 1.6;
+  /* Espaçamento entre as linhas */
+  /* Alinha o texto de forma justificada */
+  padding: auto auto 30px 30px;
+  display: block;
+  text-align: center;
+  margin: auto;
+}
 .p{
   text-indent: 20px; /* Define o recuo na primeira linha */
 }
@@ -110,6 +122,7 @@ header h2 {
   text-align: center;
   width: 100%;
   display: block;
+  font-family: 'Outfit';
 }
 
 #main {
@@ -259,6 +272,7 @@ footer span {
   position: relative;
   text-align: left;
   font-family: 'Outfit', sans-serif;
+  position: relative;
 }
 
 .planos .title-plans {
@@ -296,6 +310,40 @@ footer span {
 .planos > div:nth-child(3) {
   background-color: #e6faff;
   border-left: 5px solid #6affd0;
+}
+
+/* Estilo do Preço */
+.price {
+  font-family: 'Outfit', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.price .discount {
+  text-decoration: line-through;
+  color: #888;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.price .current {
+  color: #ff6a6a;
+  font-size: 20px;
+}
+/* Imagem de Desconto */
+.img-desconto {
+  position: absolute;
+  top: -15px;
+  left: -15px;
+}
+
+.img-desconto img {
+  width: 100px; /* Ajuste o tamanho da imagem conforme necessário */
+  height: 100px;
+  border-radius: 50%; /* Deixe a imagem com formato circular */
 }
 
 footer {

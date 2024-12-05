@@ -131,17 +131,17 @@ header h2 {
 }
 
 nav {
-  background-color: var(--menu-color);
-  
+  background-color: var(--menu-color);;
   font-family: 'Outfit';
   font-weight: bold;
   color: white;
   padding-left: 30px;
+
 }
 
 nav ul {
   display: flex;
-  padding: 0 28%;
+  padding: 0 120px;
 }
 
 nav ul li {
@@ -166,7 +166,15 @@ ul {
   padding: 30px 20px;
   background-color: var(--content-color);
 }
+#bloco1 {
+  position: relative;
+  top: -20px;
+}
 
+#bloco2 {
+  position: relative;
+  top: 20px;
+}
 #content-title {
   font-family: "bold";
   text-align: center;

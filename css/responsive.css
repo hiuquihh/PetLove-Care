@@ -102,13 +102,13 @@
   }
 }
   
-    @media (max-width: 900px) {
+    @media (max-width: 1024px) {
       html {
         font-size: 15px; /* Ajuste intermediário do tamanho da fonte */
       }
     
       header {
-        padding: 15px 10px; /* Ajusta o espaçamento interno */
+        padding-bottom: 0; /* Ajusta o espaçamento interno */
         min-height: 120px; /* Define uma altura intermediária */
         grid-template-columns: 1fr; /* Mantém os elementos em coluna */
         text-align: center; /* Centraliza o conteúdo */
@@ -126,8 +126,12 @@
       nav {
         padding: 10px; /* Ajusta o espaçamento do menu */
         height: auto; /* Permite que o menu se ajuste automaticamente */
+        overflow-x: scroll;
       }
-    
+      #content {
+       padding: 30px 20px; /*Espaçamento interno*/
+      }
+
       nav ul {
         flex-direction: row; /* Alterna para exibir os itens em linha */
         justify-content: space-evenly; /* Distribui os itens uniformemente */

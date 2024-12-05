@@ -101,7 +101,86 @@
     font-size: 0.9rem; /* Reduz o tamanho do texto no rodapé */
   }
 }
-  @media (max-width: 900px) {
   
-  
-  }
+    @media (max-width: 900px) {
+      html {
+        font-size: 15px; /* Ajuste intermediário do tamanho da fonte */
+      }
+    
+      header {
+        padding: 15px 10px; /* Ajusta o espaçamento interno */
+        min-height: 120px; /* Define uma altura intermediária */
+        grid-template-columns: 1fr; /* Mantém os elementos em coluna */
+        text-align: center; /* Centraliza o conteúdo */
+      }
+    
+      header h1 {
+        font-size: 2.2em; /* Reduz levemente o título */
+        margin-bottom: 8px; /* Ajusta o espaçamento inferior */
+      }
+    
+      header h2 {
+        font-size: 1.3em; /* Ajusta o tamanho do subtítulo */
+      }
+    
+      nav {
+        padding: 10px; /* Ajusta o espaçamento do menu */
+        height: auto; /* Permite que o menu se ajuste automaticamente */
+      }
+    
+      nav ul {
+        flex-direction: row; /* Alterna para exibir os itens em linha */
+        justify-content: space-evenly; /* Distribui os itens uniformemente */
+      }
+    
+      nav ul li {
+        font-size: 1rem; /* Ajusta o tamanho dos itens */
+        margin: 0 10px; /* Ajusta os espaçamentos laterais */
+      }
+    
+      .coluna {
+        gap: 15px; /* Ajusta o espaçamento entre os itens */
+        flex-direction: row; /* Retorna os elementos para uma disposição em linha */
+        flex-wrap: wrap; /* Permite que os itens quebrem para uma nova linha */
+      }
+    
+      .img-pet img {
+        max-width: 250px; /* Define um tamanho máximo para as imagens */
+      }
+    
+      .img-funcionamento {
+        width: 200px; /* Ajusta o tamanho da imagem para tablets */
+        height: 200px;
+      }
+    
+      .texto {
+        font-size: 1rem; /* Ajusta o tamanho do texto */
+        max-width: 450px; /* Define uma largura máxima */
+      }
+    
+      .planos {
+        flex-direction: row; /* Alinha os planos horizontalmente */
+        flex-wrap: wrap; /* Permite que os itens quebrem de linha */
+        gap: 20px; /* Espaçamento intermediário */
+      }
+    
+      .planos > div {
+        width: 45%; /* Ocupa cerca de metade da largura da tela */
+        margin: 0 auto; /* Centraliza os itens */
+      }
+    
+      .img-desconto img {
+        width: 80px; /* Ajusta o tamanho da imagem de desconto */
+        height: 80px;
+      }
+    
+      .price {
+        font-size: 18px; /* Ajusta o tamanho do preço */
+      }
+    
+      footer {
+        padding: 30px 15px; /* Ajusta o espaçamento no rodapé */
+        font-size: 1rem; /* Tamanho intermediário para o texto do rodapé */
+      }
+    }
+    

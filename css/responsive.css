@@ -1,109 +1,101 @@
-/* breakpoint p smartphones */
-@media screen and (max-width: 600px) /*regra "max-width: 600px"*/ {
-  html{
-      font-size: 16px;
-  }
-  body{
-      margin: 0;
-  }
-header {
-  padding: 10px 0;
-}
-
-header h1 {
-  margin: 10px 0;
-
-}
-
-#main {
-  flex-direction: column;
-}
-#menu,
-#content {
-  width: 100%;
-}
-#menu {
-  padding: 10px 0;
-}
-#menu span {
-  display: none; /*o elemento sobe*/
-}
-
-#menu ul {
-  display: flex;
-  margin: 0;
-  justify-content: center; /*flex-direction: row(alinhar horizontalmente: justify-content; alinhar verticalmente: align-itens); */
-  gap: 30px; /*lacuna entre os container*/ /*flex-direction: column(alinhar horizontalmente:align-itens; alinhar verticalmente:  justify-content)*/
-}
-#menu li {
-  /* margin-right: 30px; */
-}
-
-
-#menu span {
-  display: none;
-}
-
-#menu ul {
-  display: flex;
-  margin: 0;
-  justify-content: center;
-  gap: 30px; /*distancia entre a lacuna*/
-}
-#content {
-  padding: 15px 10;
-  box-sizing: border-box;
-}
-
-.movie-card {
-  flex-direction: column;
-  margin: 70px auto;
-  padding: 20px;
-  border-radius: 25px;
-  gap: 20px;
-}
-.movie-card img,
-.movie-card span {
-  width: 100%;
-}
-
-.movie-card span {
-  padding: 0;
-  text-align: center;
-}
-
-footer{
-  padding: 20px 0;
-  text-align: center;
-}
-}
-
-
-@media screen and (max-width: 768px) {
-  #main{
-      flex-direction: column;
-  }
-  #menu, #content {
-      width: 100%;
-      box-sizing: border-box;
+@media (max-width: 600px) {
+  html {
+    font-size: 14px; /* Diminui o tamanho da fonte base */
   }
 
-  #menu{
-      padding: 10px 0;
+  header {
+    padding: 10px 0; /* Reduz o espaçamento interno */
+    min-height: 100px; /* Diminui a altura mínima */
+    padding-bottom: 0px;
+    grid-template-columns: 1fr; /* Coloca os elementos em uma única coluna */
+    text-align: center;
   }
-  
-  #menu span{
-      display: none;
-  }
-  #menu ul{
-      display: flex;
-      justify-content: center;
-      gap: 100px;
-  }
-}
 
-@media only screen and (max-width: 900px) {
-#quem-somos {
-  flex-direction: column;
+  header h1 {
+    font-size: 1.8em; /* Reduz o tamanho da fonte do título */
+    margin-bottom: 5px; /* Diminui o espaçamento inferior */
+  }
+
+  header h2 {
+    font-size: 1em; /* Reduz o tamanho da fonte do subtítulo */
+    margin-top: 0;
+    font-family: "Gabarito";
+    text-shadow: 3px 3px 5px black;
+  }
+  nav {
+    padding: 10px 0; /* Reduz o espaçamento superior e inferior do menu */
+  height: 160px;
+  padding-top: 0;
+  }
+
+  nav ul {
+    flex-direction: column; /* Organiza os itens do menu em coluna */
+    align-items: center; /* Centraliza os itens no menu */
+    padding: 0;
+    flex-direction: column; /* Navegação em coluna */
+  }
+
+  nav ul li {
+    margin-bottom: 10px; /* Diminui o espaço entre os itens */
+    font-size: 1.2rem; /* Reduz o tamanho da fonte para caber melhor na tela */
+      margin-right: 0;
+      margin-bottom: 10px;
+  }
+
+  nav ul li a {
+    padding: 10px 0; /* Diminui o padding para reduzir a altura dos itens */
+    font-size: 1.1rem; /* Ajusta o tamanho da fonte para o texto do menu */
+  }
+
+  nav ul li a:hover {
+    color: #e5cec2; /* Mantém a cor de destaque ao passar o mouse */
+  }
 }
-}
+  .coluna {
+    flex-direction: column; /* Empilha os elementos verticalmente */
+    gap: 10px; /* Reduz o espaçamento entre os itens */
+  }
+
+  .img-pet img {
+    width: 100%; /* A imagem ocupa toda a largura disponível */
+    max-width: 300px; /* Limita o tamanho da imagem */
+  }
+
+  .img-funcionamento {
+    width: 150px;
+    height: 150px;
+  }
+  .texto {
+    padding: 10px;
+    text-align: justify; /* Mantém o texto justificado */
+    font-size: 0.9rem; /* Reduz o tamanho do texto */
+    max-width: 400px;
+  }
+
+  .planos {
+    flex-direction: column; /* Empilha os planos verticalmente */
+    gap: 20px; /* Reduz o espaçamento entre os planos */
+  }
+
+  .planos > div {
+    width: 90%; /* Ocupa 90% da largura da tela */
+    margin: 0 auto; /* Centraliza os planos */
+  }
+
+  .img-desconto img {
+    width: 60px; /* Ajusta o tamanho da imagem de desconto */
+    height: 60px;
+  }
+
+  .price {
+    font-size: 16px; /* Ajusta o tamanho do preço */
+  }
+
+  .price .discount {
+    font-size: 14px; /* Ajusta o tamanho do preço riscado */
+  }
+
+  footer {
+    padding: 20px 10px;
+    font-size: 0.9rem; /* Reduz o tamanho do texto no rodapé */
+  }

@@ -12,12 +12,12 @@
   }
 
   header h1 {
-    font-size: 1.8em; /* Reduz o tamanho da fonte do título */
+    font-size: 1.5em; /* Reduz o tamanho da fonte do título */
     margin-bottom: 5px; /* Diminui o espaçamento inferior */
   }
 
   header h2 {
-    font-size: 1em; /* Reduz o tamanho da fonte do subtítulo */
+    font-size: 0.9em; /* Reduz o tamanho da fonte do subtítulo */
     margin-top: 0;
     font-family: "Gabarito";
     text-shadow: 3px 3px 5px black;
@@ -50,7 +50,7 @@
   nav ul li a:hover {
     color: #e5cec2; /* Mantém a cor de destaque ao passar o mouse */
   }
-}
+
   .coluna {
     flex-direction: column; /* Empilha os elementos verticalmente */
     gap: 10px; /* Reduz o espaçamento entre os itens */
@@ -59,6 +59,7 @@
   .img-pet img {
     width: 100%; /* A imagem ocupa toda a largura disponível */
     max-width: 300px; /* Limita o tamanho da imagem */
+    
   }
 
   .img-funcionamento {
@@ -98,4 +99,9 @@
   footer {
     padding: 20px 10px;
     font-size: 0.9rem; /* Reduz o tamanho do texto no rodapé */
+  }
+}
+  @media (max-width: 900px) {
+  
+  
   }
